@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HandlebarsMvcGettingStarted.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,7 @@ namespace HandlebarsMvcGettingStarted.Controllers
         public ActionResult Index()
         {
             ViewBag.HtmlHeadline = "<h1>Handlebars HTML Headline</h1>";
+            ViewBag.Article = new Article();
             return View();
         }
     }

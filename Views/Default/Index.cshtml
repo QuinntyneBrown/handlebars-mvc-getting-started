@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <h2>Index</h2>
 
 
@@ -17,6 +18,10 @@
 <script type="text/javascript">
     new handlebarsMvcGettingStarted
             .CardComponent(document.getElementById("card-component"), "@Html.Raw(ViewBag.HtmlHeadline)");
+
+    var object = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.Article));
+
+    alert(encodeURIComponent(object.Title));
 </script>
 
 }
