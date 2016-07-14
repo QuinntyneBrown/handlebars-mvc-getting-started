@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<div id="card-component">
+
+</div>
+
+
+@section Scripts{ 
+
+<script type="text/javascript">
+    new handlebarsMvcGettingStarted
+            .CardComponent(document.getElementById("card-component"), "@Html.Raw(ViewBag.HtmlHeadline)");
+</script>
+
+}
